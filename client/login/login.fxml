@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #e9ecef;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.login.LoginController">
+   <children>
+      <TextField fx:id="email_account" layoutX="60.0" layoutY="110.0" prefHeight="52.0" prefWidth="581.0" promptText="Email addres" />
+      <Button fx:id="btn" layoutX="60.0" layoutY="188.0" mnemonicParsing="false" onAction="#login" prefHeight="52.0" prefWidth="581.0" style="-fx-background-color: #d61524;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="36.0" prefHeight="52.0" prefWidth="581.0" text="Log to Unito Mail Service" textFill="#d61524">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

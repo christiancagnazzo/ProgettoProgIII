@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.home.MailViewController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="14.0" prefHeight="980.0" prefWidth="1177.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="553.0" minWidth="10.0" prefWidth="289.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="888.0" minWidth="10.0" prefWidth="888.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea fx:id="text" editable="false" prefHeight="200.0" prefWidth="644.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea disable="true" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="From:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="To:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="Object:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="recipients" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="sender" editable="false" prefHeight="200.0" prefWidth="200.0" text="&#10;" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="object" editable="false" prefHeight="200.0" prefWidth="200.0" text="&#10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextArea>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
